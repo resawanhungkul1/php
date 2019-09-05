@@ -1,4 +1,5 @@
-<?php $transport = array('foot', 'bike', 'car', 'plane'); 
+<?php 
+$transport = array('foot', 'bike', 'car', 'plane'); 
 echo "<pre>"; 
 print_r ($transport); 
 echo "</pre>"; 
