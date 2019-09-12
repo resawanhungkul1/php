@@ -1,12 +1,13 @@
 <?php 
-if (isset($_POST['input'])) { 
-	$nama =  $_POST['nama'];
-	$nip = $_POST['nip'];
-	$alamat = $_POST['alamat'];
-	$kelamin = $_POST['kelamin'];
-	$stat   = $_POST['stat'];
-	$jabatan =$_POST['jabatan'];
-	$gol  = $_POST['gol'];
+	if (isset($_POST['input'])) { 
+		$nama =  $_POST['nama'];
+		$nip = $_POST['nip'];
+		$alamat = $_POST['alamat'];
+		$kelamin = $_POST['kelamin'];
+		$stat   = $_POST['stat'];
+		$jabatan =$_POST['jabatan'];
+		$gol  = $_POST['gol'];
+		echo "<h3 align ='right'>".date("d/m/Y H:i:s")."</h3>";
 
 
 
@@ -66,7 +67,7 @@ echo "<br>";
 	}elseif ($jabatan=="manager") {
 		$b=4500000;
 		echo "manager=Rp.4500.000";
-	}	elseif ($jabatan=="staff") {
+	}elseif ($jabatan=="staff") {
 		$b=3000000;
 		echo "staff = Rp.3000.000";
 	}elseif ($jabatan=="karyawan") {
