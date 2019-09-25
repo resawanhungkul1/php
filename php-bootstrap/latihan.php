@@ -7,7 +7,7 @@
 <body>
 		<!-- Header -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">SMK ASSALAAM</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -30,10 +30,10 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li> -->
+      </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+      </li> -->
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -45,54 +45,49 @@
 
 		<!-- Content -->
 		<div class="container-fluid">
-			<div class="row justify-content-left">
-				<div class="col-md-6" style="padding:20px;">
-         <div class="card">
-            <div class="card-header">Raport</div>
-            <div class="card-body">
-              <form action="" method="post">
-                <div class="form-group">
-                  <label for=""> Nama</label>
-                  <input type="text" name="nama" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label for="">Kelas</label>
-                  <input type="text" name="kelas" class="form-control" required>
-                </div>
-                <div class="form-goup">
-
-                <button class="btn btn-primary btn-block" type="submit" name="simpan">Simpan</button>
-                  
-                </div>
-              </form>  
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-        <center>
-          <h2><u>OUTPUT</u></h2>
-        </center>
-          <div class="table-responsive">
-            <table class="table">
-              <tr>
-                <th>Nama</th>
-                <th>Kelas</th>
-              </tr>
-                <?php 
-                if (isset($_POST['simpan'])) {
-                  $nama=$_POST['nama'];
-                  $kelas=$_POST['kelas'];
-                
-               ?>
-              <tr>
-                <td><?php if (isset($nama)){ echo $nama;} ?></td>
-                <td><?php if (isset($nama)){ echo $kelas;}?></td>
-              </tr>
-              <?php } ?>
-            </table>
-          </div>
-        </div>
-					
+			<div class="row">
+				<div class="col-md-6" style="padding:20px">
+					<div class="card">
+						<div class="card-header">Latihan</div>
+						<div class="card-body">
+							<form action="" method="post">
+								<div class="form-group">
+									<label >Nama</label>
+									<input type="text" name="nama" class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Kelas</label>
+									<input type="text" name="kelas" class="form-control">
+								</div>
+								<div class="form-group">
+									<button type="submit" name="simpan" class="btn btn-primary">simpan</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6" style="padding:20px">
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>Nama</th>
+								<th>Kelas</th>
+							</tr>
+							<!-- PHP  -->
+							<?php 
+								if (isset($_POST['simpan'])) {
+									$a=$_POST['nama'];
+									$b=$_POST['kelas'];
+								
+							 ?>
+							 <!-- end php -->
+				              <tr>
+				                <td><?php if (isset($a)){ echo $a;} ?></td>
+				                <td><?php if (isset($b)){ echo $b;}?></td>
+				              </tr>
+				              <?php } ?>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -113,4 +108,4 @@
 		<!-- End Js -->
 
 </body>
-</html> 
+</html>
