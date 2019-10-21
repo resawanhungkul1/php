@@ -33,7 +33,7 @@
 	 		<td>masukan bilangan </td>
 	 		<td><input type="number" name="bilangan[]"> </td>
 	 		<td>masukan pangkat bilangan</td>
-	 		<td><input type="number" name="pangkat[]"> </td>
+	 		<td><input type="number" name="pangkat[] "> </td>
 	 	</tr>
 	 </table>
 	 <?php } ?>

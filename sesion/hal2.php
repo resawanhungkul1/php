@@ -37,8 +37,10 @@ if ($_SESSION['akseslogin']) {
 
   			$r=$al;
   			$total=3.14*$r*$r;
+  			echo "jari :  $al";
+  			echo "keliling :";
 
-  			echo "luas lingkaran ".$total;
+  			echo "luas lingkaran : ".$total;
   		}
 
    ?>

@@ -28,7 +28,7 @@
  		<td>nama</td>
  		<td><input type="text" name="nama[]"></td>
  		<td>kelas</td>
- 		<td><input type="text" name="kelas[]"></td>
+ 		<td><input type="text" name="kelas[]  "></td>
  	</tr>
 
  </table>
