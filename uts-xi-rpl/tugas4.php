@@ -64,9 +64,7 @@ if ($_SESSION['akseslogin']) {
 						</form>
 						<div class="form-group"> 
 						<center><a href="tugas5.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit" name="tidak"> Tidak</button></a></center>
-						<?php  if (isset($_POST['tidak'])) {
-							echo "terimakasih";
-						} ?>
+			
 						</div>
 					</div>
 				</div>
@@ -76,7 +74,7 @@ if ($_SESSION['akseslogin']) {
 
 		<!-- footer -->
 		<footer>
-			<center><b>&copy; 2019 SMK ASSALAAM</b></center>
+	        		<center><b>&copy; 2019 SMK ASSALAAM</b></center>
 
 		</footer>
 		<!--  End Footer-->

@@ -82,7 +82,7 @@ if ($_SESSION['akseslogin']) {
 								<th>jenis<br>Barang</th>
 								<th>harga<br>Satuan(Rp)</th>
 								<th>jumlah<br>Barang</th>
-								<th> total harga<br>(Rp)</th>
+							<th> total harga<br>(Rp)</th>
 							
 							</tr>
 							<?php
@@ -103,35 +103,34 @@ if ($_SESSION['akseslogin']) {
 						$sub_total=$sub_total+$akhir;
 
 						
-					?>
+					 ?>
 							 
 
-				              <tr>
-				              <td > <?php  echo $i++; ?></td>
+				              
+				            <td > <?php  echo $i++; ?></td>
 							<td ><?php echo "$na[$key]";?></td>
 							<td ><?php echo "$kel[$key]";?></td>
 							<td ><?php echo "$nh[$key]";?></td>
-						
 							<td ><?php echo "$nu[$key]";?></td>
 							<td ><?php echo "$nua[$key]";?></td>
 							<td ><?php echo "$akhir";?></td>
 
 
 
-				              </tr>
+				             
 						<tr>
 						<?php } 
-							if ($sub_total>= 150000) {
-						 		$Diskon  ="5%";
-						 		$jum =$sub_total*5/100;
+							if ($sub_total>= 350000) {
+						 		$Diskon  ="20%";
+						 		$jum =$sub_total*20/100;
 						 	}
-						 	if ($sub_total>=250000) {
+						 	elseif ($sub_total>=250000) {
 						 		$Diskon="10%";
 						 		 $jum=$sub_total*10/100;
-						 	}if ($sub_total>=350000) {
-						 		$Diskon="20%";
-						 		 $jum=$sub_total*20/100;
-						 	}if ($sub_total>=0) {
+						 	}elseif ($sub_total>=150000) {
+						 		$Diskon="5%";
+						 		 $jum=$sub_total*5/100;
+						 	}else  {
 						 		$Diskon="0%";
 						 		$jum=0;
 

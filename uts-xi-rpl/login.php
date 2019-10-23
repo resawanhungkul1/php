@@ -9,6 +9,10 @@ session_start();
 		<link rel="icon" type="image/png" href="logo.png" >
 	<title> Latihan 1</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 		<!-- Header -->
@@ -21,7 +25,7 @@ session_start();
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="home.php"> <span class="glyphicon glyphicon-home">HOME</span></a>
       </li>
 
 
@@ -37,30 +41,33 @@ session_start();
 		<div class="container">
 			<div class="row justify-content-center">
 
-				<div class="col-md-6" style="padding:20px">
+				<div class="col-md-4" style="padding:20px">
 					<div class="card">
 
                   <img src="logo.png" alt="..." class="rounded mx-auto d-block " width="70px" align="center">
 						<div class="card-body">
 							<form action="" method="post">
 								<div class="form-group">
-								<span class="glyphicon glyphicon-user"> </span>
-									<label >User name</label>
-									<input type="text" name="nama" class="form-control">
+					
+									
+									<input type="text" name="nama"   class="form-control is-valid" id="validationServer01" placeholder="First name" value="resawan" required >
 								</div>
 								<div class="form-group">
-									<label >Password</label>
-									<input type="Password" name="ps" class="form-control">
+									
+									<input type="Password" name="ps" class="form-control is-valid" id="validationServer01" placeholder="First name" value="123" required>
 								</div>
 								<div class="form-group">
-									<button type="submit" name="akses" class="btn btn-primary btn-block">simpan</button>
+									<button type="submit" name="akses" class="btn btn-primary btn-block">Login</button>
 								</div>
+
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		 <img src="suzuki.png" alt="..." class=" mx-auto d-block " width="40px" >
+		  <img src="logo-icon-1.png" alt="..." class="rounded mx-auto d-block " width="40px" >
 		<!-- End Content-->
 
 		<!-- footer -->

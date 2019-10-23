@@ -57,7 +57,7 @@ if ($_SESSION['akseslogin']) {
 						
 						</form>
 						<div class="form-group"> 
-						<center><button class="btn btn-outline-danger my-2 my-sm-0" type="submit" name="tidak"><a href=""></a> Tidak</button></center>
+						<center><a href="home2.php"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit" name="tidak"> Tidak</button></a></center>
 						</div>
 						</div>
 					</div>
